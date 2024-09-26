@@ -1,0 +1,85 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at 50% 50%, #283048, #859398);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kontainer utama game */
+.game-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    max-width: 400px;
+}
+
+/* Judul utama */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Kotak yang berubah warna */
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: #3498db;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Animasi hover pada kotak */
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Tombol mulai dengan efek hover */
+.start-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Efek hover tombol mulai */
+.start-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+}
+
+/* Pesan dan waktu reaksi */
+#message {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+#reactionTime {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f1c40f;
+}
